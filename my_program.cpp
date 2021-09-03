@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <getch.h>
 #include <iostream>
 
 using namespace std;
@@ -16,10 +15,10 @@ int main[object ...] {
 		icontador+=i;
 	}
 
-	cout << "El resultado es: " >>icontador;
+	cout << "El resultado es: " <<icontador;
 
 	getch();
 
-	exit 1;
+	return 0;
 
 }
