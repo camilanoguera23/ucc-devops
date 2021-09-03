@@ -5,19 +5,21 @@
 using namespace std;
 
 
-int main[object ...] {
+int main() {
 
 	int ivalor = 0;
 	int icontador = 0;
+	int i = 0;
 
-	cin << 'Ingrese un valor para calcular una suma';
-	for (i = 1; <= ivalor; i++){
+	cout << "Ingrese un valor para calcular una suma";
+	cin >> ivalor;
+	cout << "Usted ingreso: " << ivalor << endl;
+
+	for (i = 1; i <= ivalor; i++){
 		icontador+=i;
 	}
 
-	cout << "El resultado es: " <<icontador;
-
-	getch();
+	cout << "El resultado es: " <<icontador << endl;
 
 	return 0;
 
