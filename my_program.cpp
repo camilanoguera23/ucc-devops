@@ -1,10 +1,12 @@
-<stdio.h>
-<math.h>
-<getch.h>
+#include <stdio.h>
+#include <math.h>
+#include <getch.h>
+#include <iostream>
 
-#workspace 'curso devops'
+using namespace std;
 
-static int main[object ...] {
+
+int main[object ...] {
 
 	int ivalor = 0;
 	int icontador = 0;
@@ -14,9 +16,10 @@ static int main[object ...] {
 		icontador+=i;
 	}
 
-	cout >> 'El resultado es: '+%int,icontador;
+	cout << "El resultado es: " >>icontador;
 
 	getch();
 
 	exit 1;
 
+}
