@@ -1,6 +1,3 @@
-#Exclusion de folder binarios
-/bin
-
 #Exclusion de archivo por extencion
 *.class
 *.jar
