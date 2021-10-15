@@ -1,99 +1,84 @@
 #include <stdio.h>
+#include <math.h>
+#include <iostream>
 
-int main()
-{
-    int opcion;
- float area=3, l1=5, radio=8, h=2, base=7;
+using namespace std;
 
-    float area, l1, radio, h, base;
+int main() {
 
-    printf(" ----------------------------------------------------------------\n");
-    printf("|Universidad cooperativa de Colombia                             |\n");
-    printf("|Camila Andrea Noguera Poveda                                    |\n");
-    printf("|Programa para realizar el area del circulo, triangulo y cuadrado|\n");
-    printf(" ---------------------------------------------------------------- \n");
-    printf("        1.  Circulo     \n");
-    printf("        2. Triangulo    \n");
-    printf("        3. Cuadrado     \n");
+	int vi_opcion  = 1;
+	float vf_area  = 0;
+	bool vb_opcion = false;
 
-    //printf("Por favor introduce una opcion: " );
-    //scanf("%d", &opcion);
-    //switch(opcion)
-    //{
-        //case 1:
-        //{
-            printf("Ingresa el radio: %f " , radio);
-            //scanf("%f", &radio);
-    printf("Por favor introduce una opcion: " );
-    scanf("%d", &opcion);
-    switch(opcion)
-    {
-        case 1:
-        {
-            printf("Ingresa el radio: ");
-            scanf("%f", &radio);
+	int vi_base=0;
+        int vi_altura = 0;
+	int vi_radio = 0;
 
-            area=(radio*radio)*3.14;
-            printf("El area del circulo es de : %f " , area);
+	cout << "+-------------------------------------------------------------+\n";
+	cout << "|   Programa para calcular el area de una figura geometrica   |\n";
+	cout << "|   Realizado por Camila Andrea Noguera Poveda                |\n";
+	cout << "|   9/SEP  2021. Universidad Cooperativa de Colombia          |\n";
+	cout << "|   14/OCT 2021. rename and add fragment code                 |\n";
+	cout << "+-------------------------------------------------------------+\n";
+	cout << "\n";
 
-          //  break;
-        //}
+	cout << "Seleccionar una opcion geometrica para calcular el area\n";
+	cout << "Circulo   [1] por defecto\n";
+	cout << "Triangulo [2] \n";
+	cout << "Cuadrado  [3] \n";
+	cout << "[1] :";
 
-        //case 2:
-        //{
-            printf("Ingresa base : %f " , base );
-            //scanf("%f", &base);
+	cout << "Opcion por defecto = 1";
+	//cin >> vi_opcion;
+	vi_opcion = 1;
 
-            printf("Ingresa altura : %f ", h );
-            //scanf("%f", &h);
+	cout << "Usted ingreso: " << vi_opcion << endl;
+
+	if (vi_opcion < 1 ){
+		vi_opcion = 1;
+		vb_opcion = true;
+	}else if (vi_opcion > 3 ){
+		vi_opcion = 1;
+		vb_opcion = true;
+	}
+
+	if (vb_opcion) {
+		cout << "ingreso una opcion fuera de rango, se asigna por defecto 1\n";
+	}
+
+	switch(vi_opcion) {
+	  case 1:
+    	    // Circulo
+	    cout << "Ingrese el Radio del circulo : ";
+	    //cin >> vi_radio;
+	    vi_radio = 3;
+
+	    cout << "\n";
+	    vf_area = (vi_radio * vi_radio) * 3.14151692;
+	    break;
+	  case 2:
+	    // Triangulo
+	    cout << "Ingrese la altura : ";
+	    cin >> vi_altura;
+	    cout << "\n";
+
+	    cout << "Ingrese la base : ";
+            cin >> vi_base;
+            cout << "\n";
+
+	    vf_area = (vi_base * vi_altura) / 2;
+	    break;
+	  default:
+	    // Cuadrado
+	    cout << "Ingrese longitud de la base : ";
+            cin >> vi_base;
+            cout << "\n";
+
+	    vf_area = vi_base * vi_base;
             break;
-        }
+	}
 
-        case 2:
-        {
-            printf("Ingresa base : " );
-            scanf("%f", &base);
+	cout << "La area es => " << vf_area << endl; 
 
-            printf("Ingresa altura : " );
-            scanf("%f", &h);
-
-
-            area=(base*h)/2;
-            printf("El area del triangulo es de : %f " , area);
-
-
-            //break;
-        //}
-
-        //case 3:
-        //{
-	 printf("Ingresa lado: %f ", l1);
-           // scanf("%f", &l1);
-           break;
-        }
-
-        case 3:
-        {
-	 printf("Ingresa lado: ");
-            scanf("%f", &l1);
-
-            area=l1*l1;
-            printf("El area del cuadrado es de : %f ", area);
-
-         //  break;
-
-        //}
-
-       // default:
-          //  printf("La opcion no es correcta");
-    //}
-
-            break;
-
-        }
-
-        default:
-            printf("La opcion no es correcta");
-    }
-	
+	return 0;
 }
