@@ -1,0 +1,18 @@
+Started by user esteban reyes
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/reto
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[reto] $ /bin/sh -xe /tmp/jenkins879958139820808515.sh
++ g++ /mnt/d/git_devops/area.cpp -o /mnt/d/git_devops/bin/area_figuras
+[reto] $ /bin/sh -xe /tmp/jenkins17986387713433724539.sh
++ sha256sum /mnt/d/git_devops/bin/area_figuras
+e97bb9b07bc3f5c887c04248c088139cbbdddb645a2ec61202925c6bbd02cdc0  /mnt/d/git_devops/bin/area_figuras
+[reto] $ /bin/sh -xe /tmp/jenkins9631929411868741896.sh
++ /mnt/d/git_devops/bin/area_figuras
+|Jader Esteban Reyes |
+        1.  Circulo     
+        2. Triangulo    
+        3. Cuadrado     
+Ingresa el radio: 8.000000 El area del circulo es de : 200.960007 Ingresa base : 7.000000 Ingresa altura : 2.000000 El area del triangulo es de : 7.000000 Ingresa lado: 5.000000 El area del cuadrado es de : 25.000000 Finished: SUCCESS

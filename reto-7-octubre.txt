@@ -1,0 +1,22 @@
+Started by user camila noguera
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/reto-7-octubre
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[reto-7-octubre] $ /bin/sh -xe /tmp/jenkins14999387986238767066.sh
++ g++ /mnt/c/Users/camia/git_devops/programa.cpp -o /mnt/c/Users/camia/git_devops/bin/area_geometrica
+[reto-7-octubre] $ /bin/sh -xe /tmp/jenkins8648992410322517820.sh
++ sha256sum /mnt/c/Users/camia/git_devops/bin/area_geometrica
+557e7d1177b09ed9f9610ac4b8e4a786a5d329312e6e8c90c05077fea9358177  /mnt/c/Users/camia/git_devops/bin/area_geometrica
+[reto-7-octubre] $ /bin/sh -xe /tmp/jenkins12388049157487560412.sh
++ /mnt/c/Users/camia/git_devops/bin/area_geometrica
+ ----------------------------------------------------------------
+|Universidad cooperativa de Colombia                             |
+|Camila Andrea Noguera Poveda                                    |
+|Programa para realizar el area del circulo, triangulo y cuadrado|
+ ---------------------------------------------------------------- 
+        1.  Circulo     
+        2. Triangulo    
+        3. Cuadrado     
+Ingresa el radio: El area del circulo es de : 200.960007 Ingresa base : Ingresa altura : El area del triangulo es de : 7.000000 Ingresa lado: El area del cuadrado es de : 25.000000 Finished: SUCCESS
