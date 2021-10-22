@@ -13,6 +13,7 @@ int main() {
 	int vi_base=0;
         int vi_altura = 0;
 	int vi_radio = 0;
+	double raiz = 0;
 
 	cout << "+-------------------------------------------------------------+\n";
 	cout << "|   Programa para calcular el area de una figura geometrica   |\n";
@@ -79,6 +80,10 @@ int main() {
 	}
 
 	cout << "La area es => " << vf_area << endl; 
-
+	   
+	//Archivo funcion
+	//vf_area calcular raiz cuadrada en una variable e imprimir el resultado
+	raiz=sqrt(vf_area);
+	cout <<"La raiz cuadrada de" <<vf_area<< "es: "<<raiz;
 	return 0;
 }
